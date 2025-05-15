@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
       _loading = true;
     });
 
-    final uri = Uri.parse('https://DEIN-BACKEND-URL/predict'); // Ändere das!
+    final uri = Uri.parse('https://projekt-schere.onrender.com'); // Ändere das!
 
     var request = http.MultipartRequest('POST', uri);
     request.files.add(await http.MultipartFile.fromPath('file', image.path));
